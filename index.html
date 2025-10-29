@@ -25,7 +25,7 @@
           </li>
         </ul>
       </nav>
-      <a href = "#0">
+      <a href = "#0" class = "logo-href">
         <img src = 'images/logo-black.svg' class="logo" alt = "logo-black">
       </a>
       <address class="address">
@@ -38,49 +38,51 @@
     <main>
 
       <section class = "cover" id = "cover">
-        <div class = 'dark-cover'>
-          <div class="ono-tebe-nado">
-            <h1 class = "text-ono-tebe-nado ono">оН<span class="o">О</span></h1>
-            <h1 class = "text-ono-tebe-nado tebe">ТЕБ<span class = "o">Е</span></h1>
-            <h1 class = "text-ono-tebe-nado nado">НАД<span class="o">О</span></h1>
+        <div class = "dark-lens">
+          <div class="text-cover">
+            <h1 class = "text-in-cover">
+              <span class = "text-cover-left">оНО </span>
+              <span class = "text-cover-center">ТЕБЕ</span> 
+              <span class = "text-cover-right">НАДО</span>
+            </h1>
           </div>
-          <article class="description">
+          <div class="description">
             <p class="description-text">аукцион вещей, в которые никто не верил</p>
             <button class = 'button-bid'>сделать ставку</button>
-          </article>
+          </div>
         </div>
       </section>
 
       <section class = "lots" id="lots">
 
-        <h1 class="lot-name">Лоты</h1>
+        <h2 class="lot-name">Лоты</h2>
 
         <ul class="all-card">
-          <li class="card card1">
-            <div class="dark-card">
-              <a href = "#0" class="href-name-card">
-                <article class = 'name-card'>Фильм режиссёра, который бросил киношколу </article>
-              </a>
-              <p class="info-in-card1">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
-            </div>
+          <li class="card card-film">
+            <a href = "#0" class="href-name-card">
+              <div class="dark-lens">
+                  <h4 class = 'name-card'>Фильм режиссёра, который бросил киношколу </h4>
+                <p class="info-in-card">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
+              </div>
+            </a>
           </li>
 
-          <li class="card card2">
-            <div class="dark-card">
-              <a href = "#0" class="href-name-card">
-                <article class = 'name-card name-card2'>Книга, где описан один скучный день из жизни рекламного агента </article>
-              </a>
-              <p class="info-in-card2">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</p>
-            </div>
+          <li class="card card-book">
+            <a href = "#0" class="href-name-card">
+              <div class="dark-lens">
+                  <h4 class = 'name-card name-card-book'>Книга, где описан один скучный день из жизни рекламного агента </h4>
+                <p class="info-in-card">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</p>
+              </div>
+            </a>
           </li>
 
-          <li class="card card3">
-            <div class="dark-card">
-              <a href = "#0" class="href-name-card">
-                <article class = 'name-card name-card3'>Картина, которую повторит даже 5-летний сын маминой подруги</article>
-              </a>
-              <p class="info-in-card3">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</p>
-            </div>
+          <li class="card card-pictures">
+            <a href = "#0" class="href-name-card">
+              <div class="dark-lens">
+                  <h4 class = 'name-card name-card-pictures'>Картина, которую повторит даже 5-летний сын маминой подруги</h4>
+                <p class="info-in-card">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</p>
+              </div>
+            </a>
           </li>
 
         </ul>
@@ -91,13 +93,15 @@
       <section class="about" id = "about">
         <div class = 'kryg'></div>
         <div class = 'info-about'>
-          <h1 class="about-zagolovok">об аукционе</h1>
-          <div class="text-about1">
-            <p>Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?</p>
-          </div>
-          <div class="text-about2">
-            <p >Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах растерзанные критиками. Непринятые и непонятые. Когда-то они казались просто неудачными. Но, несмотря
-              на критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно представить современную культуру. Когда в эти вещи не верил никто, продолжали верить их создатели. И сейчас эти лоты стали культовыми. </p>
+          <h3 class="about-zagolovok">об аукционе</h3>
+          <div class = "text-under-zagolovok">
+            <div class="text-about-intro">
+              <p>Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?</p>
+            </div>
+            <div class="text-about-details">
+              <p >Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах растерзанные критиками. Непринятые и непонятые. Когда-то они казались просто неудачными. Но, несмотря
+                на критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно представить современную культуру. Когда в эти вещи не верил никто, продолжали верить их создатели. И сейчас эти лоты стали культовыми. </p>
+            </div>
           </div>
         </div>
       </section>
@@ -105,7 +109,7 @@
     </main>
 
     <footer class="footer">
-      <address class="address address-footer">
+      <address class="address-footer address">
         <a href="tel:+99995555555" class="phone">+9 999 555 5555</a>
         <a href="mailto:info@sobaka.ge" class="mail">info@sobaka.ge</a>
         <span>наб. Принсенграхт 263-265, Амстердам</span>
@@ -122,9 +126,15 @@
         </li>
       </ul>
       <div class="image-footer">
-        <img src = "images/yt.svg" class="image-yt" alt = "imgae-yt">
-        <img src = "images/vk.svg" class="image-vk" alt = "imgae-vk">
-        <img src = "images/pinterest.svg" class="image-pt" alt = "image-pt">
+        <a href = "#0">
+          <img src = "images/yt.svg" class="image-in-footer" alt = "imgae-yt">
+        </a>
+        <a href = "#0">
+          <img src = "images/vk.svg" class="image-in-footer" alt = "imgae-vk">
+        </a>
+        <a href = "#0">
+          <img src = "images/pinterest.svg" class="image-in-footer" alt = "image-pt">
+        </a>
       </div>
     </footer>
 
