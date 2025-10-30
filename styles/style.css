@@ -83,8 +83,8 @@ li {
 
 .text-cover {
     display: grid;
-    margin-top: 115px;
-    width: 1000px;
+    align-items: center;
+    width: 100%;
 }
 
 .text-in-cover {
@@ -93,31 +93,33 @@ li {
     font-weight: 700;
     color: white;
     text-transform: uppercase;
-    letter-spacing: 0.3em;
     position: relative;
     line-height: 114.99px;
+    width: 100%;
+    padding: 165px 50px 0 50px;
 }
 
 .text-cover-left, .text-cover-center, .text-cover-right {
     display: block;
+    letter-spacing: 0.3em;
 }
 
 .text-cover-left {
     text-align: left;
-    padding-left: 50px;
-    padding-top: 50px;
 }
 
 .text-cover-center {
-    padding-top: 21px;
-    padding-left: 50px;
+    margin-top: 20px;
     text-align: center;
 }
 
 .text-cover-right {
-    padding-top: 20px;
-    padding-left: 665px;
+    margin-top: 20px;
     text-align: right;
+}
+
+.none-letter-spacing {
+    letter-spacing: 0;
 }
 
 .description {
@@ -172,6 +174,7 @@ li {
     background-position: center;
     list-style: none;
     margin-top: 8px;
+    margin-bottom: 32px;
 }
 
 .card-film {
@@ -184,10 +187,6 @@ li {
 
 .card-pictures {
     background-image: url(../images/card-lot-03.jpg);
-}
-
-.card-film, .card-book, .card-pictures {
-    margin-bottom: 32px;
 }
 
 .name-card {
@@ -285,7 +284,7 @@ li {
     gap:25px;
 }
 
-.text-about-details, .text-about-intro {
+.text-in-about {
     width: 688px;
     line-height:24px ;
     font-size:20px;
